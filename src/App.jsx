@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Background from "./Components/Background/Background";
 import Navbar from './Components/Background/Navbar/Navbar';
 import Hero from "./Components/Hero/Hero";
+import MyServices from "./Components/MyServices/MyServices";
+import Footer from "./assets/Footer/Footer";
 
 
 const App = () => {
@@ -22,7 +24,7 @@ useEffect(()=>{
 
   return (
     <div>
-<Background playStatus={playStatus} heroCount={heroCount}/>
+ <Background playStatus={playStatus} heroCount={heroCount}/>
 <Navbar/>
 <Hero
 setPlayStatus={setPlayStatus}
@@ -31,6 +33,8 @@ heroCount={heroCount}
 setHeroCount={setHeroCount}
 playStatus={playStatus}
 />
+<MyServices/>
+<Footer/>
     </div>
   )
 }
